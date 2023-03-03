@@ -50,7 +50,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    # own
+    'School.middleware.SchoolMiddleware',
 ]
+
+DATABASE_ROUTERS = ['School.router.SchoolRouter']  # own
 
 ROOT_URLCONF = 'multitenant.urls'
 
