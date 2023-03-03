@@ -78,6 +78,8 @@ WSGI_APPLICATION = 'multitenant.wsgi.application'
 
 DATABASES = {
     'default': {'ENGINE':'djongo', 'NAME':'default'},
+    'nairobi': {'ENGINE':'djongo', 'NAME':'nairobi'}, #new
+    'accra': {'ENGINE':'djongo', 'NAME':'accra'}, #new
 }
 
 
