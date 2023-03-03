@@ -5,4 +5,4 @@ from .models import Students
 class adminStudent(admin.ModelAdmin):
     list_display = ["registration_number", "first_name", "last_name"]
 
-admin.site.register(adminStudent, Students)
+admin.site.register(Students, adminStudent)
